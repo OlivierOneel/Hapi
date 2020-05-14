@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import './App.css';
  
 import VictimsFirst from "./victims/Pages/FirstPage"
 import HelpFirst from "./help/Pages/FirstPage"
