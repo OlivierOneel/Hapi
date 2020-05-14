@@ -7,18 +7,27 @@ class Pictures extends React.Component{
         this.changeBorder=this.changeBorder.bind(this)
     }
     changeBorder(e){
-        var x = document.querySelectorAll(".selected");
+        var pictureClassName=""
+        if (this.props.name=="food"){
+        pictureClassName="food-selected"
+    }else if (this.props.name=="water"){
+        pictureClassName="water-selected"
+    }
+    else if (this.props.name=="flood"){
+        pictureClassName="flood-selected"
+    }
+    var x = document.querySelectorAll("."+pictureClassName);
         if(x.length) {
-            x[0].classList.remove('selected');
+            x[0].classList.remove(pictureClassName);
         }
         let target = e.currentTarget
-        target.classList.toggle('selected')
+        target.classList.toggle(pictureClassName)
     }
 
     render(){
 
     return(
-            <img src={this.props.path} onClick = {this.changeBorder} className='divas'/>
+            <img src={this.props.path} onClick = {this.changeBorder} className='pictures'/>
 
         
     )

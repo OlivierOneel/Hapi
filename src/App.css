@@ -1,8 +1,14 @@
 
-.divas{
+.pictures{
   height: 100px;
   width: 100px;
 }
-.selected{
+.food-selected{
+  border: 1px solid blue;
+}
+.water-selected{
+  border: 1px solid blue;
+}
+.flood-selected{
   border: 1px solid blue;
 }

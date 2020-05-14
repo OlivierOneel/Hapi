@@ -1,7 +1,7 @@
 import React from "react"
-import {Route, Switch} from "react-router-dom"
-import SecondPage from "./SecondPage"
-import Pictures from "../Components/Images"
+import Food from "../Components/Food"
+import Water from "../Components/Water"
+import Flood from "../Components/Flood"
 
 class FirstPage extends React.Component{
 
@@ -10,10 +10,14 @@ class FirstPage extends React.Component{
     return(
         <div>
             <h1 className="test">We are here to help you</h1>
+            <p>How much water is there?</p>
+            <Flood/>
+            <br/>
             <p>How much food do you have left?</p>
-            <Pictures path = {require("../../images/full_food.png")}/>
-            <Pictures path = {require("../../images/some_food.png")}/>
-            <Pictures path = {require("../../images/no_food.png")}/>
+            <Food/>
+            <br/>
+            <p>How much water do you have left?</p>
+            <Water/>
             <br/>
             <button onClick={event =>window.location.href="/victims/2"}>
                 Next Page
