@@ -12,3 +12,7 @@
 .flood-selected{
   border: 1px solid blue;
 }
+.small_pictures{
+  height: 80px;
+  width: 80px;
+}

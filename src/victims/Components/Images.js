@@ -16,13 +16,14 @@ class Pictures extends React.Component{
     else if (this.props.name=="flood"){
         pictureClassName="flood-selected"
     }
+    if(pictureClassName!=""){
     var x = document.querySelectorAll("."+pictureClassName);
         if(x.length) {
             x[0].classList.remove(pictureClassName);
         }
         let target = e.currentTarget
         target.classList.toggle(pictureClassName)
-    }
+    }}
 
     render(){
 

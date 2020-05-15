@@ -2,6 +2,8 @@ import React from "react"
 import Food from "../Components/Food"
 import Water from "../Components/Water"
 import Flood from "../Components/Flood"
+import People from "../Components/People"
+import Counter from "../Components/Counter"
 
 class FirstPage extends React.Component{
 
@@ -19,6 +21,14 @@ class FirstPage extends React.Component{
             <p>How much water do you have left?</p>
             <Water/>
             <br/>
+            <p>How many people are you?</p>
+            <People/>
+            <table>
+                <tr>
+                    <td><Counter/></td>
+                    <td><Counter/></td>
+                </tr>
+            </table>
             <button onClick={event =>window.location.href="/victims/2"}>
                 Next Page
             </button>
