@@ -1,5 +1,5 @@
 
-.pictures{
+img{
   height: 100px;
   width: 100px;
 }
@@ -15,4 +15,19 @@
 .small_pictures{
   height: 80px;
   width: 80px;
+}
+.medecin_name{
+  display:none
+}
+.medecin_picture{
+  border: 1px solid blue;
+}
+.medecin_hidden{
+  visibility:visible
+}
+.toiletery_picture{
+  border: 1px solid blue;
+}
+.Toiletery{
+  display:none;
 }
