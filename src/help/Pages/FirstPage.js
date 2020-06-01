@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import { Route, Switch } from "react-router-dom";
 import Form from "../../components/Form"
-//import useForm from "react-hook-form";
 
 class FirstPage extends React.Component {
     render() {
