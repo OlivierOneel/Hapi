@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Component} from "react"
 import {Route, Switch} from "react-router-dom"
 
 class mainPage extends React.Component{

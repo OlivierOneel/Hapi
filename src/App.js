@@ -3,23 +3,25 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
  
 import VictimsFirst from "./victims/Pages/FirstPage"
 import HelpFirst from "./help/Pages/FirstPage"
+import HelpSecond from "./help/Pages/SecondPage"
 import mainPage from "./components/mainPage"
 import VictimsSecond from "./victims/Pages/SecondPage"
 import VictimsLast from "./victims/Pages/LastPage"
  
 class App extends Component {
   render() {
-    return (      
-       <BrowserRouter>
+    return (
+      <BrowserRouter>
         <div>
-            <Switch>
-            <Route path="/" component={mainPage} exact/>
-             <Route path="/victims" component={VictimsFirst} exact/>
-             <Route path="/help" component={HelpFirst}/>
-             <Route path="/victims/2" component={VictimsSecond}/>
-             <Route path="/victims/last" component={VictimsLast}/>
-           </Switch>
-        </div> 
+          <Switch>
+            <Route path="/" component={mainPage} exact />
+            <Route path="/victims" component={VictimsFirst} exact />
+            <Route path="/help" component={HelpFirst} exact />
+            <Route path="/help/2" component={HelpSecond} />
+            <Route path="/victims/2" component={VictimsSecond} />
+            <Route path="/victims/last" component={VictimsLast} />
+          </Switch>
+        </div>
       </BrowserRouter>
     );
   }
