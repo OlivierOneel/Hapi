@@ -7,9 +7,9 @@ class Flood extends React.Component{
             
     return(
         <div>
-            <Pictures path = {require("../../images/flood_low.png")} name="flood"/>
-            <Pictures path = {require("../../images/flood_medium.png")} name="flood"/>
-            <Pictures path = {require("../../images/flood_high.png")} name="flood"/>
+            <Pictures path = {require("../../images/essentials/flood_low.png")} name="flood"/>
+            <Pictures path = {require("../../images/essentials/flood_medium.png")} name="flood"/>
+            <Pictures path = {require("../../images/essentials/flood_high.png")} name="flood"/>
 
 
 

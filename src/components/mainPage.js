@@ -4,12 +4,11 @@ import {Route, Switch} from "react-router-dom"
 class mainPage extends React.Component{
     render(){
     return(
-        <div>
-            <button onClick={event =>window.location.href="/victims"}>
+        <div className="mainPageContainer">
+            <button onClick={event =>window.location.href="/victims"} className='mainPageButton'>
                 I'm a victim
             </button>
-            <br/>
-            <button onClick={event =>window.location.href="/help"}>
+            <button onClick={event =>window.location.href="/help"} className='mainPageButton'>
                 I can help
             </button>
         </div>

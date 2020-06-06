@@ -1,33 +1,186 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root{
+  --dark60: rgba(48,70,89,.8);
+  --light:rgba(255,255,255,0.6)
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body{
+  height: 100%;
+  overflow: visible;
+  display: inline-block;
+}
+body{
+  background: 
+  linear-gradient(
+    var(--light),
+    var(--light)
+  ),
+  url(./images/background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+button{
+  cursor: pointer;
+  font-family: 'Lato',sans-serif;
+  transition-duration: 0.4s;
+  background-color: #555555;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+}
+.mainPageButton:hover {
+  background-color: white;
+  color: black;
+}
+.mainPageButton{
+  margin:10px;
+  width: 500px;
+  height: 100px;
+  font-size: 60px;
+
+
+}
+h1, p{
+  font-size: 40px;
+}
+.mainPageContainer{
+  height: 50%;
+  margin-top: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
+
+.firstPageContainer{
+  height: 100%;
+  text-align: center;
+  padding:10px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: inline-block;
+}
+table{
+  display: inline-block;
+}
+td{
+  padding-left:10px;
+  padding-right: 10px;
+}
+.Counter{
+  padding-top: -10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.CounterButton{
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  margin:1px;
+  font-size:30px;
+}
+.FirstPageButton{
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  margin:10px;
+  font-size:30px;
+}
+.FirstPageButton:hover {
+  background-color: white;
+  color: black;
+}
+.secondPageContainer{
+  height: 100%;
+  text-align: center;
+  padding:10px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: inline-block;
+}
+.SecondPageDiv{
+  width: 100px; 
+}
+.secondPageTable{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.secondPageTable td{
+  vertical-align: top;
+}
+.secondPageButton{
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  margin:10px;
+  font-size:30px;
+}
 img{
   height: 100px;
   width: 100px;
 }
 .food-selected{
-  border: 1px solid blue;
+  border: 3px solid var(--dark60);
+  border-radius: 8px;
 }
 .water-selected{
-  border: 1px solid blue;
+  border: 3px solid var(--dark60);
+  border-radius: 8px;
 }
 .flood-selected{
-  border: 1px solid blue;
+  border: 3px solid var(--dark60);
+  border-radius: 8px;
 }
-.small_pictures{
-  height: 80px;
-  width: 80px;
-}
+
 .medecin_name{
   display:none
 }
-.medecin_picture{
-  border: 1px solid blue;
+#medecin_name{
+  width: 100px;
 }
-.medecin_hidden{
-  visibility:visible
+.medecin_picture{
+  border: 3px solid var(--dark60);
+  border-radius: 8px;
 }
 .toiletery_picture{
-  border: 1px solid blue;
+  border: 3px solid var(--dark60);
+  border-radius: 8px;
 }
 .Toiletery{
+  display: none;
+}
+#Toiletery{
+}
+.pet_food_picture{
+  border: 3px solid var(--dark60);
+  border-radius: 8px;
+}
+.pet_food{
+  display:none;
+}
+.housing_items_picture{
+  border: 3px solid var(--dark60);
+  border-radius: 8px;
+}
+.housing_items{
   display:none;
 }

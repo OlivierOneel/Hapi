@@ -7,9 +7,9 @@ class Food extends React.Component{
             
     return(
         <div>
-            <Pictures path = {require("../../images/food_no.png")} name="food"/>
-            <Pictures path = {require("../../images/food_some.png")} name="food"/>
-            <Pictures path = {require("../../images/food_full.png")} name="food"/>
+            <Pictures path = {require("../../images/essentials/food_no.png")} name="food"/>
+            <Pictures path = {require("../../images/essentials/food_some.png")} name="food"/>
+            <Pictures path = {require("../../images/essentials/food_full.png")} name="food"/>
 
 
 

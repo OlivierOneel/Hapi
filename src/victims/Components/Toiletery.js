@@ -6,10 +6,10 @@ class Toiletery extends React.Component{
     render(){
             
     return(
-        <div>
-            <Pictures path = {require("../../images/toilet-paper.png")} name="toiletery"/>
-            <Pictures path = {require("../../images/soap.png")} name="toiletery"/>
-            <Pictures path = {require("../../images/toothbrush.png")} name="toiletery"/>
+        <div className="Toiletery" id="Toiletery">
+            <Pictures path = {require("../../images/non_essentials/toilet-paper.png")} name="toiletery"/>
+            <Pictures path = {require("../../images/non_essentials/soap.png")} name="toiletery"/>
+            <Pictures path = {require("../../images/non_essentials/toothbrush.png")} name="toiletery"/>
 
 
 

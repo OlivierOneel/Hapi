@@ -7,13 +7,15 @@ class People extends React.Component{
             
     return(
         <div>
-            <Pictures path = {require("../../images/adult.png")}/>
-            <Pictures path = {require("../../images/boy.png")} className="smallPicture"/>
             
             <table>
                 <tr>
-                    <td>Adult</td>
-                    <td>Children</td>
+                    <td><Pictures path = {require("../../images/essentials/adult.png")}/></td>
+                    <td>            <Pictures path = {require("../../images/essentials/boy.png")} /></td>
+                </tr>
+                <tr>
+                    <td><p>Adult</p></td>
+                    <td><p>Children</p></td>
                 </tr>
             </table>
 

@@ -20,21 +20,37 @@ class Pictures extends React.Component{
                 this.ImageSelected(e, 'medecin')
                 var input_field = document.querySelector("#medecin_name");
                 input_field.classList.toggle("medecin_name")
+                input_field.value=''
                 break
             case 'toilet':
                 this.ImageSelected(e,'toiletery')
-                var toileteryBorder = document.querySelectorAll('.toiletery_picture')
-                if(toileteryBorder.length) {
-                    var i;
-                    for(i=1; i<toileteryBorder.length; i++)
-                    toileteryBorder[i].classList.remove("toiletery_picture");
-                }
+                this.MultipleImageSelected(e,"toiletery_picture")
                 var subToiletery = document.querySelector("#Toiletery");
                 subToiletery.classList.toggle("Toiletery")
 
                 break
             case 'toiletery':
                 this.ImageSelected(e, 'toiletery')
+                break
+            case 'pet':
+                this.ImageSelected(e,'pet_food')
+                this.MultipleImageSelected(e,"pet_food_picture")
+                var subToiletery = document.querySelector("#pet_food");
+                subToiletery.classList.toggle("pet_food")
+
+                break
+            case 'pet_food':
+                this.ImageSelected(e,'pet_food')
+                break
+            case 'housing':
+                this.ImageSelected(e,'housing_items')
+                this.MultipleImageSelected(e,"housing_items_picture")
+                var subToiletery = document.querySelector("#housing_items");
+                subToiletery.classList.toggle("housing_items")
+
+                break
+            case 'housing_items':
+                this.ImageSelected(e,'housing_items')
                 break
 
 
@@ -48,6 +64,14 @@ SingleImageSelected(e,pictureClassName){
         }
         let target = e.currentTarget
         target.classList.toggle(pictureClassName)
+}
+MultipleImageSelected(e,pictureClassName){
+    var petFoodBorder = document.querySelectorAll("."+pictureClassName)
+    if(petFoodBorder.length) {
+        var i;
+        for(i=1; i<petFoodBorder.length; i++)
+        petFoodBorder[i].classList.remove(pictureClassName);
+    }
 }
 
 ImageSelected(e,pictureClassName){

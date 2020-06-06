@@ -2,27 +2,55 @@ import React from 'react';
 import Pictures from "../Components/Images"
 import { Table } from 'reactstrap';
 import Toiletery from "../Components/Toiletery"
+import HousingItems from "../Components/HousingItems"
 import '../../App.css';
  
 const SecondPage = () => {
     return (
-       <div>
-          <h1>Hello again victims</h1>
-          <Table responsive>
+       <div className='secondPageContainer'>
+        <h1>Hello again victims</h1>
+        <table className='secondPageTable'>
             <tr>
-                <td><Pictures id = "medecin_picture" path = {require("../../images/medecine.png")} name="medecin"/></td>
-                <td><Pictures id = "toilet_picture" path = {require("../../images/toilet.png")} name="toilet"/></td>
-                <td><Pictures id = "pet_picture" path = {require("../../images/pets.png")} name="pet"/></td>
-                <td><Pictures id = "pet_picture" path = {require("../../images/pets.png")} name="pet"/></td>
+                <td>
+                    <div className='SecondPageDiv'>
+                        <Pictures id = "medecin_picture" path = {require("../../images/non_essentials/medecine.png")} name="medecin"/>
+                        <br/>
+                        <input id = 'medecin_name' className="medecin_name" type="text" placeholder="Insuline; Epipen; etc"/>
+                    </div>
+                </td>
+                <td>
+                    <div className='SecondPageDiv'>
+                        <Pictures id = "toilet_picture" path = {require("../../images/non_essentials/toilet.png")} name="toilet"/>
+                        <br/>
+                        <Toiletery/>
+                    </div>
+                </td>
+                <td>
+                    <div className='SecondPageDiv'>
+                        <Pictures id = "pet_picture" path = {require("../../images/non_essentials/pets.png")} name="pet"/>
+                        <br/>
+                        <div className = "pet_food" id="pet_food">
+                            <Pictures path = {require("../../images/non_essentials/pet-food.png")} name="pet_food"/>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div className='SecondPageDiv'>
+                        <Pictures id = "housing_picture" path = {require("../../images/non_essentials/camping.png")} name="housing"/>
+                        <br/>
+                        <HousingItems/>
+                    </div>
+                </td>
             </tr>
-            <tr>
-                <td><input id = 'medecin_name' className="medecin_name" type="text" placeholder="Insuline; Epipen; etc"/></td>
-                <td className="Toiletery" id="Toiletery"><Toiletery/></td>
-            </tr>
+        </table>
 
+           
+            
+            
+            
+            <br/>
 
-          </Table>
-        <button onClick={event =>window.location.href="/victims/last"}>
+        <button className="secondPageButton" onClick={event =>window.location.href="/victims/last"}>
             Next Page
         </button>
         </div>

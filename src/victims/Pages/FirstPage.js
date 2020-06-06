@@ -10,8 +10,9 @@ class FirstPage extends React.Component{
     render(){
             
     return(
-        <div>
-            <h1 className="test">We are here to help you</h1>
+
+        <div className='firstPageContainer'>
+            <h1>We are here to help you</h1>
             <p>How much water is there?</p>
             <Flood/>
             <br/>
@@ -25,17 +26,16 @@ class FirstPage extends React.Component{
             <People/>
             <table>
                 <tr>
-                    <td><Counter/></td>
-                    <td><Counter/></td>
+                    <td><Counter className='Counter_1'/></td>
+                    <td><Counter className='Counter_1'/></td>
                 </tr>
             </table>
-            <button onClick={event =>window.location.href="/victims/2"}>
+            <br/>
+            <button className='FirstPageButton' onClick={event =>window.location.href="/victims/2"}>
                 Next Page
-            </button>
-            <button onClick={event =>window.location.href="/victims/last"}>
-                End
-            </button>
+            </button>       
         </div>
+
 
 
     )

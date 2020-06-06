@@ -7,9 +7,9 @@ class Water extends React.Component{
             
     return(
         <div>
-            <Pictures path = {require("../../images/water_no.png")} name="water"/>
-            <Pictures path = {require("../../images/water_some.png")} name="water"/>
-            <Pictures path = {require("../../images/water_full.png")} name="water"/>
+            <Pictures path = {require("../../images/essentials/water_no.png")} name="water"/>
+            <Pictures path = {require("../../images/essentials/water_some.png")} name="water"/>
+            <Pictures path = {require("../../images/essentials/water_full.png")} name="water"/>
 
 
 
