@@ -4,8 +4,12 @@ import { Table } from 'reactstrap';
 import Toiletery from "../Components/Toiletery"
 import HousingItems from "../Components/HousingItems"
 import '../../App.css';
+import {Link} from "react-router-dom"
  
-const SecondPage = () => {
+class SecondPage extends React.Component{
+
+    render(){
+            
     return (
        <div className='secondPageContainer'>
         <h1>Hello again victims</h1>
@@ -49,12 +53,14 @@ const SecondPage = () => {
             
             
             <br/>
-
-        <button className="secondPageButton" onClick={event =>window.location.href="/victims/last"}>
-            Next Page
-        </button>
+        <Link to='/victims/last'>
+            <button className='secondPageButton'>
+                Next Page
+            </button>   
+            </Link>
+    
         </div>
     );
 }
- 
+}
 export default SecondPage;

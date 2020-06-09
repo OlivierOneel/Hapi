@@ -4,6 +4,7 @@ import Water from "../Components/Water"
 import Flood from "../Components/Flood"
 import People from "../Components/People"
 import Counter from "../Components/Counter"
+import {Link} from "react-router-dom"
 
 class FirstPage extends React.Component{
 
@@ -31,9 +32,12 @@ class FirstPage extends React.Component{
                 </tr>
             </table>
             <br/>
-            <button className='FirstPageButton' onClick={event =>window.location.href="/victims/2"}>
+            <Link to='/victims/2'>
+            <button className='FirstPageButton'>
                 Next Page
-            </button>       
+            </button>   
+            </Link>
+    
         </div>
 
 
