@@ -63,6 +63,9 @@ button{
   .SecondPageDiv{
     width: 25%; 
   }
+  #medecin_name{
+    width: 75px;
+  }
 }
 
 /* Ordinateur */
@@ -88,6 +91,9 @@ button{
   }
   .SecondPageDiv{
     width: 100px; 
+  }
+  #medecin_name{
+    width: 100px;
   }
 }
 .mainPageButton:hover {
@@ -183,9 +189,7 @@ td{
 .medecin_name{
   display:none
 }
-#medecin_name{
-  width: 100px;
-}
+
 .medecin_picture{
   border: 3px solid var(--dark60);
   border-radius: 8px;
