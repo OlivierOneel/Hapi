@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
  
 import VictimsFirst from "./victims/Pages/FirstPage"
-import HelpFirst from "./help/Pages/FirstPage"
+import HelpFirst from "./helper/helpFirstPage"
 import mainPage from "./components/mainPage"
 import VictimsSecond from "./victims/Pages/SecondPage"
 import VictimsLast from "./victims/Pages/LastPage"
