@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 
 const GeoLocation = (props) => {
 
-    const [{ latitude, longitude }, setCoords] = useState({
-        latitude: "Lat", longitude: "Long"
+    const [{ latitude, longitude, dispLat, dispLon }, setCoords] = useState({
+        latitude: "Lat", longitude: "Long", dispLat: "Lat", dispLon: "Long"
     });
 
     const getLocation = () => {
@@ -18,7 +18,9 @@ const GeoLocation = (props) => {
         console.log(position.coords.longitude)
         setCoords({
             latitude: position.coords.latitude,
-            longitude: position.coords.longitude
+            longitude: position.coords.longitude,
+            dispLat: Number(position.coords.latitude).toFixed(4),
+            dispLon: Number(position.coords.longitude).toFixed(4)
         })
     }
     const handleLocationError = (error) => {
@@ -43,9 +45,9 @@ const GeoLocation = (props) => {
 
     return (
         <div>
-            <button onClick={getLocation}>Get Location</button>
-            <p>Latitute:{latitude}</p>
-            <p>Longitude:{longitude}</p>
+            <button className="buttonHelperFirst" onClick={getLocation}>Get Location</button>
+            <p className="geoLoc">Latitute: {dispLat}</p>
+            <p className="geoLoc">Longitude: {dispLon}</p>
 
         </div>
     )

@@ -66,6 +66,19 @@ button{
   #medecin_name{
     width: 75px;
   }
+  label{
+    font-size: 40px;
+    margin-left:20px;
+    display: block;
+  }
+  .extraWaterContainer{
+    display: block;
+  }
+  #water-qty{
+    height: 100%;
+    font-size: 30px;
+    width:100%;
+  }
 }
 
 /* Ordinateur */
@@ -95,14 +108,48 @@ button{
   #medecin_name{
     width: 100px;
   }
+  label{
+    font-size: 40px;
+    margin-left:20px;
+  }
+  #water-qty{
+    font-size: 30px;
+  }
 }
 .mainPageButton:hover {
   background-color: white;
   color: black;
 }
 
-h1, p{
+h1, p, h2{
   font-size: 40px;
+}
+form input.checkbox{
+  margin:10px;
+  height: 25px;
+  width: 25px;
+}
+
+.helpFirstContainer{
+  height: 100%;
+  text-align: center;
+  padding:10px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: inline-block;
+}
+.buttonHelperFirst{
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  margin:10px;
+  font-size:30px;
+}
+.buttonHelperFirst:hover {
+  background-color: white;
+  color: black;
 }
 
 
