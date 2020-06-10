@@ -8,25 +8,22 @@ import mainPage from "./components/mainPage"
 import VictimsSecond from "./victims/Pages/SecondPage"
 import VictimsLast from "./victims/Pages/LastPage"
  
-
-
-class App extends React.Component{
+class App extends Component {
   render() {
-    return (
-      <BrowserRouter>
-      <div>
-          <Switch>
-            <Route path="/" component={mainPage} exact/>
-            <Route path="/victims" component={VictimsFirst} exact/>
-            <Route path="/help" component={HelpFirst}/>
-            <Route path="/victims/2" component={VictimsSecond}/>
-            <Route path="/victims/last" component={VictimsLast}/>
-          </Switch>
-        </div>
+    return (      
+       <BrowserRouter>
+          <div>
+              <Switch>
+              <Route path="/" component={mainPage} exact/>
+              <Route path="/victims" component={VictimsFirst} exact/>
+              <Route path="/help" component={HelpFirst}/>
+              <Route path="/victims/2" component={VictimsSecond}/>
+              <Route path="/victims/last" component={VictimsLast}/>
+            </Switch>
+          </div> 
       </BrowserRouter>
     );
   }
-  
 }
-
+ 
 export default App;
