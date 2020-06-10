@@ -1,17 +1,18 @@
 import React from "react"
-import {Route, Switch} from "react-router-dom"
+import {Link} from "react-router-dom"
 
 class mainPage extends React.Component{
     render(){
     return(
-        <div>
-            <button onClick={event =>window.location.href="/victims"}>
-                I'm a victim
-            </button>
-            <br/>
-            <button onClick={event =>window.location.href="/help"}>
+        <div className="mainPageContainer">
+            <Link to="/victims">
+                <button className='mainPageButton'>I'm a victime</button>
+            </Link>
+            <Link to="/help">
+            <button className='mainPageButton'>
                 I can help
             </button>
+            </Link>
         </div>
 
 
