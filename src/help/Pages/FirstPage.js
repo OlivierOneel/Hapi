@@ -10,10 +10,11 @@ class FirstPage extends React.Component {
                 <Form />
                 <button onClick={event => window.location.href = "/"}>
                     Main Page
-            </button>
+                </button>
+
                 <button onClick={event => window.location.href = "/help/2"} >
                     Next
-            </button>
+                </button>
             </div>
         )
     }

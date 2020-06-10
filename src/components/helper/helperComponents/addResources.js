@@ -1,13 +1,12 @@
-import React, {useState} from 'react';
-import foodImg from './img/food.png';
-import waterImg from './img/water.png';
+import React, { useState } from 'react'
 
 const resourceList = {
     water: 0,
     food: 0,
-}
+};
 
-function AddResources(resource,selection) {
+const AddResources = (resource,selection) => {
+
     const [foodCount, setfoodCount] = useState(0);
     const [waterCount, setwaterCount] = useState(0);
 
@@ -28,15 +27,15 @@ function AddResources(resource,selection) {
         <div className="buttons">
 
             <button onClick={remFood}>-</button>
-            <img src={foodImg} alt="Food" />
+            {/* <img src={foodImg} alt="Food" /> */}
             <button onClick={addFood}>+</button>
 
             <button onClick={remWater}>-</button>
-            <img src={waterImg} alt="Water" />
+            {/* <img src={waterImg} alt="Water" /> */}
             <button onClick={addWater}>+</button>
             <h2>Food: {foodCount} Water: {waterCount}</h2>
         </div>
     );
-}
+};
 
 export default AddResources;

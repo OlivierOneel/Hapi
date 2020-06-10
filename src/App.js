@@ -1,30 +1,27 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
- 
-import VictimsFirst from "./victims/Pages/FirstPage"
-import HelpFirst from "./help/Pages/FirstPage"
-import HelpSecond from "./help/Pages/SecondPage"
-import mainPage from "./components/mainPage"
-import VictimsSecond from "./victims/Pages/SecondPage"
-import VictimsLast from "./victims/Pages/LastPage"
- 
-class App extends Component {
+import React, { Component }from 'react';
+import { BrowserRouter, Route, Link, Switch } from "react-router-dom";
+import './App.css';
+/* Componentns import */
+import mainPage from './components/mainPage'
+import helpFirstPage from './components/helper/helpFirstPage'
+import victimFirstPage from './components/victim/victimFirstPage'
+
+
+class App extends React.Component{
   render() {
     return (
       <BrowserRouter>
-        <div>
+      <div>
           <Switch>
-            <Route path="/" component={mainPage} exact />
-            <Route path="/victims" component={VictimsFirst} exact />
-            <Route path="/help" component={HelpFirst} exact />
-            <Route path="/help/2" component={HelpSecond} />
-            <Route path="/victims/2" component={VictimsSecond} />
-            <Route path="/victims/last" component={VictimsLast} />
+            <Route path="/" exact component={mainPage} />
+            <Route path="/help" exact component={helpFirstPage} />
+            <Route path="/victims" exact component={victimFirstPage} />
           </Switch>
         </div>
       </BrowserRouter>
     );
   }
+  
 }
- 
+
 export default App;
