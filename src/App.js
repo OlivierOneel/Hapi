@@ -13,9 +13,11 @@ class App extends React.Component{
       <BrowserRouter>
       <div>
           <Switch>
-            <Route path="/" exact component={mainPage} />
-            <Route path="/help" exact component={helpFirstPage} />
-            <Route path="/victims" exact component={victimFirstPage} />
+            <Route path="/" component={mainPage} exact/>
+            <Route path="/victims" component={VictimsFirst} exact/>
+            <Route path="/help" component={HelpFirst}/>
+            <Route path="/victims/2" component={VictimsSecond}/>
+            <Route path="/victims/last" component={VictimsLast}/>
           </Switch>
         </div>
       </BrowserRouter>
