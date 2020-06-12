@@ -23,14 +23,8 @@ const HygExtra = () => {
                         <input
                             type="checkbox"
                             key={item.id}
-                            checked={item.isChecked}
-                            /* onChange={(e)=> {checkHandler(e,item.id)}} */ 
-                            /* onChange={(e)=>setHygiene(
-                                [...hygieneState].map(obj =>{
-                                    if(obj.id===item.id) {
-                                        obj.isChecked=e.target.checked
-                                    }
-                                }))} */
+                            /* checked={item.isChecked}
+                            onChange={()=>{setHygiene()}} */
                         />
                     </label>
                 </div>

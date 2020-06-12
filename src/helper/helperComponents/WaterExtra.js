@@ -10,11 +10,11 @@ const WaterExtra = (props) => {
         setSelected({ choice: e.target.value })
     };
 
-    const submitHandle = (e) => {
+/*     const submitHandle = (e) => {
         e.preventDefault()
         const choice = selectedState
         console.log(choice.choice)
-    };
+    }; */
 
     return (
         <div>
@@ -24,7 +24,7 @@ const WaterExtra = (props) => {
                 <option value="ten-twenty">Between 10L and 20L</option>
                 <option value="more-twenty">More than 20L</option>
             </select>
-            <button onClick={submitHandle}>Submit</button>
+            {/* <button onClick={submitHandle}>Submit</button> */}
         </div>
     )
 }

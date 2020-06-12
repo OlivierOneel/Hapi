@@ -9,61 +9,55 @@ const ResourceSelection = (props) => {
     const [food, setFood] = useState(false)
     const [hygiene, setHygiene] = useState(false)
 
-    const [waterContent, setWaterContent] = useState(null)
-    const [foodContent, setFoodContent] = useState(null)
-    const [hygieneContent, setHygieneContent] = useState(null)
+    const [waterToggled, setWaterToggle] = useState(false)
+    const [foodToggled, setFoodToggle] = useState(false)
+    const [hygieneToggled, setHygieneToggle] = useState(false)
 
-    const firstSelectionSubmit = (e) => {
-        e.preventDefault()
-        e.persist()
-
-        if (e.target["water"].checked) {
-            setWaterContent(
-                <WaterExtra />
-            )
+    const checkHandler = (id) => {
+        switch (id) {
+            case "water":
+                setWater(!water)
+                setWaterToggle(!waterToggled)
+                break;
+            case "food":
+                setFood(!food)
+                setFoodToggle(!foodToggled)
+                break;
+            case "hygiene":
+                setHygiene(!hygiene)
+                setHygieneToggle(!hygieneToggled)
+                break;
+            default:
+                break;
         }
-        if (e.target["food"].checked) {
-            setFoodContent(
-                <FoodExtra />
-            )
-        }
-        if (e.target["hygiene"].checked) {
-            setHygieneContent(
-                <HygExtra />
-            )
-        }
-    }
-
-    const stateReset = (e) => {
-        e.preventDefault()
-        setWaterContent(null)
-        setFoodContent(null)
-        setHygieneContent(null)
-        setWater(false)
-        setFood(false)
-        setHygiene(false)
     }
 
     return (
         <div>
-            <form className="formResourceList" onSubmit={firstSelectionSubmit}>
-                <label>Water
-            <input type="checkbox" id="water" checked={water} onChange={(e) => setWater(e.target.checked)} />
-                </label>
+            <form className="formResourceList">
+                <label />Water
+            <input type="checkbox" key="water" checked={water} onChange={() => checkHandler("water")} />
                 <label>Food
-            <input type="checkbox" id="food" checked={food} onChange={(e) => setFood(e.target.checked)} />
+            <input type="checkbox" key="food" checked={food} onChange={() => checkHandler("food")} />
                 </label>
                 <label>Hygiene
-            <input type="checkbox" id="hygiene" checked={hygiene} onChange={(e) => setHygiene(e.target.checked)} />
+            <input type="checkbox" key="hygiene" checked={hygiene} onChange={() => checkHandler("hygiene")} />
                 </label>
-                <button type="submit">Submit</button>
-                <button onClick={stateReset}>Reset</button>
+
+                {water ? <div>
+                    <WaterExtra />
+                </div> : null}
+                {food ? <div>
+                    <FoodExtra />
+                </div> : null}
+                {hygiene ? <div>
+                    <HygExtra />
+                </div> : null}
+                <div className="form-submit-btn">
+                <button onClick={console.log("test")} type="submit">Submit</button>
+                </div>
             </form>
-            <div>
-                {waterContent}
-                {foodContent}
-                {hygieneContent}
-            </div>
+
         </div>
 
     )

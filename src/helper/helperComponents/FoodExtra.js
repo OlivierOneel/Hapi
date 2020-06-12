@@ -6,15 +6,14 @@ const FoodExtra = (props) => {
         canned: false,
         babyFood: false,
         vegetables: false,
-        meat: false
     });
 
-    const foodTypeSubmit = (e) => {
+    /* const foodTypeSubmit = (e) => {
         e.preventDefault()
         console.log(foodSelection)
-    }
+    } */
 
-    const stateReset = (e) => {
+    /* const stateReset = (e) => {
         e.preventDefault()
         setFoodSelection({
             canned: false,
@@ -22,13 +21,13 @@ const FoodExtra = (props) => {
             vegetables: false,
             meat: false
         })
-    }
+    } */
 
     return (
         <div>
             <h2>Please select the type of food you can offer:</h2>
             <p>{foodSelection.canned}</p>
-            <form className="formFoodExtra" onSubmit={foodTypeSubmit}>
+            <form className="formFoodExtra" >
                 <label >Canned Food
                 <input
                         type="checkbox"
@@ -50,15 +49,8 @@ const FoodExtra = (props) => {
                         checked={foodSelection.vegetables}
                         onChange={(e) => { setFoodSelection({ ...foodSelection,vegetables: e.target.checked }) }} />
                 </label>
-                <label >Meat
-                <input
-                        type="checkbox"
-                        id="meat"
-                        checked={foodSelection.meat}
-                        onChange={(e) => { setFoodSelection({ ...foodSelection,meat: e.target.checked }) }} />
-                </label>
-                <button type="submit">Submit</button>
-                <button onClick={stateReset}>Reset</button>
+                {/* <button type="submit">Submit</button>
+                <button onClick={stateReset}>Reset</button> */}
             </form>
         </div>
     );
