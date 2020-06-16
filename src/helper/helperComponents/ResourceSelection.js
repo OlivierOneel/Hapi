@@ -54,7 +54,7 @@ const ResourceSelection = (props) => {
                     <HygExtra />
                 </div> : null}
                 <div className="form-submit-btn">
-                <button onClick={console.log("test")} type="submit">Submit</button>
+                <button type="submit">Submit</button>
                 </div>
             </form>
 
