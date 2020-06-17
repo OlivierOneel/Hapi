@@ -32,9 +32,14 @@ const ResourceSelection = (props) => {
         }
     }
 
+    const submitForm = (e) => {
+        e.preventDefault()
+        console.log(e)
+    }
+
     return (
         <div>
-            <form className="formResourceList">
+            <form className="formResourceList" onSubmit={submitForm}>
                 <label />Water
             <input type="checkbox" key="water" checked={water} onChange={() => checkHandler("water")} />
                 <label>Food

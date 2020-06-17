@@ -8,26 +8,11 @@ const FoodExtra = (props) => {
         vegetables: false,
     });
 
-    /* const foodTypeSubmit = (e) => {
-        e.preventDefault()
-        console.log(foodSelection)
-    } */
-
-    /* const stateReset = (e) => {
-        e.preventDefault()
-        setFoodSelection({
-            canned: false,
-            babyFood: false,
-            vegetables: false,
-            meat: false
-        })
-    } */
-
     return (
         <div>
             <h2>Please select the type of food you can offer:</h2>
-            <p>{foodSelection.canned}</p>
-            <form className="formFoodExtra" >
+            
+            
                 <label >Canned Food
                 <input
                         type="checkbox"
@@ -51,7 +36,7 @@ const FoodExtra = (props) => {
                 </label>
                 {/* <button type="submit">Submit</button>
                 <button onClick={stateReset}>Reset</button> */}
-            </form>
+            
         </div>
     );
 };
