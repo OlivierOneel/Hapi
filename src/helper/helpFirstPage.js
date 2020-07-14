@@ -18,6 +18,9 @@ class helpFirstPage extends Component {
                 <h1>Thank you for offering your help</h1>
                     <GeoLocation />
                     <ResourceSelection />
+                <Link to='/help/2'>
+                <button>Done!</button>
+                </Link>
             </div>
         )
     }
