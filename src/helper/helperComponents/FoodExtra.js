@@ -28,7 +28,6 @@ const FoodExtra = (props) => {
         <div>
             <h2>Please select the type of food you can offer:</h2>
             <p>{foodSelection.canned}</p>
-            <form className="formFoodExtra" onSubmit={foodTypeSubmit}>
                 <label >Canned Food
                 <input
                         className='checkbox'
@@ -53,7 +52,6 @@ const FoodExtra = (props) => {
                         checked={foodSelection.vegetables}
                         onChange={(e) => { setFoodSelection({ ...foodSelection,vegetables: e.target.checked }) }} />
                 </label>
-            </form>
         </div>
     );
 };
