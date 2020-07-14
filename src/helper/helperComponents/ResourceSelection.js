@@ -48,16 +48,17 @@ const ResourceSelection = (props) => {
         <div>
             <form className="formResourceList" onSubmit={firstSelectionSubmit}>
                 <label>Water
-            <input type="checkbox" id="water" checked={water} onChange={(e) => setWater(e.target.checked)} />
+            <input className="checkbox" type="checkbox" id="water" checked={water} onChange={(e) => setWater(e.target.checked)} />
                 </label>
                 <label>Food
-            <input type="checkbox" id="food" checked={food} onChange={(e) => setFood(e.target.checked)} />
+            <input className="checkbox" type="checkbox" id="food" checked={food} onChange={(e) => setFood(e.target.checked)} />
                 </label>
                 <label>Hygiene
-            <input type="checkbox" id="hygiene" checked={hygiene} onChange={(e) => setHygiene(e.target.checked)} />
+            <input className="checkbox" type="checkbox" id="hygiene" checked={hygiene} onChange={(e) => setHygiene(e.target.checked)} />
                 </label>
-                <button type="submit">Submit</button>
-                <button onClick={stateReset}>Reset</button>
+                <br/>
+                <button type="submit" className="buttonHelperFirst">Submit</button>
+                <button onClick={stateReset} className="buttonHelperFirst">Reset</button>
             </form>
             <div>
                 {waterContent}

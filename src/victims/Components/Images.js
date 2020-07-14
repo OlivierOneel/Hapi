@@ -18,9 +18,23 @@ class Pictures extends React.Component{
                 break;
             case 'medecin':
                 this.ImageSelected(e, 'medecin')
-                var input_field = document.querySelector("#medecin_name");
-                input_field.classList.toggle("medecin_name")
-                input_field.value=''
+                var input_field = document.querySelectorAll("#medecin_name");
+                if (input_field!=null){
+                if(input_field.length) {
+                    var i;
+                    for(i=0; i<input_field.length; i++)
+                    input_field[i].classList.add("medecin_name");
+                }}
+                var minus_button = document.querySelectorAll("#MedecinMinusButton");
+                if(minus_button!=null){
+                if(minus_button.length) {
+                    var i;
+                    for(i=0; i<minus_button.length; i++)
+                    minus_button[i].classList.add("MedecinButton");
+                }}
+                console.log(input_field)
+                var add_button = document.querySelector("#MedecinAddButton");
+                add_button.classList.toggle("MedecinButton")
                 break
             case 'toilet':
                 this.ImageSelected(e,'toiletery')
@@ -82,7 +96,7 @@ ImageSelected(e,pictureClassName){
     render(){
 
     return(
-            <img src={this.props.path} onClick = {this.changeBorder} className='pictures'/>
+            <img src={this.props.path} onClick = {this.changeBorder} className='pictures' id={this.props.name}/>
 
         
     )

@@ -21,6 +21,7 @@ const HygExtra = () => {
                 <div key={item.id}>
                     <label key={item.id}>{item.label}
                         <input
+                            className='checkbox'
                             type="checkbox"
                             key={item.id}
                             checked={item.isChecked}
