@@ -40,13 +40,14 @@ const ResourceSelection = (props) => {
     return (
         <div>
             <form className="formResourceList" onSubmit={submitForm}>
-                <label />Water
-            <input type="checkbox" key="water" checked={water} onChange={() => checkHandler("water")} />
+                <label>Water
+            <input className="checkbox" type="checkbox" key="water" checked={water} onChange={() => checkHandler("water")} />
+            </label>
                 <label>Food
-            <input type="checkbox" key="food" checked={food} onChange={() => checkHandler("food")} />
+            <input className="checkbox" type="checkbox" key="food" checked={food} onChange={() => checkHandler("food")} />
                 </label>
                 <label>Hygiene
-            <input type="checkbox" key="hygiene" checked={hygiene} onChange={() => checkHandler("hygiene")} />
+            <input className="checkbox" type="checkbox" key="hygiene" checked={hygiene} onChange={() => checkHandler("hygiene")} />
                 </label>
 
                 {water ? <div>
@@ -59,7 +60,7 @@ const ResourceSelection = (props) => {
                     <HygExtra />
                 </div> : null}
                 <div className="form-submit-btn">
-                <button type="submit">Submit</button>
+                <button className="buttonHelperFirst" type="submit">Submit</button>
                 </div>
             </form>
 
