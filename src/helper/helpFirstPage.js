@@ -19,7 +19,7 @@ class helpFirstPage extends Component {
                     <GeoLocation />
                     <ResourceSelection />
                 <Link to='/help/2'>
-                <button>Done!</button>
+                <button className="buttonHelperFirst">Done!</button>
                 </Link>
             </div>
         )
