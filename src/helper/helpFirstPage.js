@@ -14,8 +14,8 @@ class helpFirstPage extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Help First Page</h1>
+            <div className="helpFirstContainer">
+                <h1>Thank you for offering your help</h1>
                     <GeoLocation />
                     <ResourceSelection />
             </div>

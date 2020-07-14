@@ -31,6 +31,7 @@ const FoodExtra = (props) => {
             <form className="formFoodExtra" onSubmit={foodTypeSubmit}>
                 <label >Canned Food
                 <input
+                        className='checkbox'
                         type="checkbox"
                         id="canned"
                         checked={foodSelection.canned}
@@ -38,6 +39,7 @@ const FoodExtra = (props) => {
                 </label>
                 <label >Baby Food
                 <input
+                        className='checkbox'
                         type="checkbox"
                         id="babyFood"
                         checked={foodSelection.babyFood}
@@ -45,6 +47,7 @@ const FoodExtra = (props) => {
                 </label>
                 <label >Vegetables
                 <input
+                        className='checkbox'
                         type="checkbox"
                         id="vegetables"
                         checked={foodSelection.vegetables}
@@ -52,13 +55,15 @@ const FoodExtra = (props) => {
                 </label>
                 <label >Meat
                 <input
+                        className='checkbox'
                         type="checkbox"
                         id="meat"
                         checked={foodSelection.meat}
                         onChange={(e) => { setFoodSelection({ ...foodSelection,meat: e.target.checked }) }} />
                 </label>
-                <button type="submit">Submit</button>
-                <button onClick={stateReset}>Reset</button>
+                <br/>
+                <button className="buttonHelperFirst" type="submit">Submit</button>
+                <button className="buttonHelperFirst" onClick={stateReset}>Reset</button>
             </form>
         </div>
     );
