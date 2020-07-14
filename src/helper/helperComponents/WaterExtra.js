@@ -24,7 +24,6 @@ const WaterExtra = (props) => {
                 <option value="ten-twenty">Between 10L and 20L</option>
                 <option value="more-twenty">More than 20L</option>
             </select>
-            <button className="buttonHelperFirst"onClick={submitHandle}>Submit</button>
         </div>
     )
 }
