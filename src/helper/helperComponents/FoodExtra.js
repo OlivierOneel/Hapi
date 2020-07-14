@@ -34,8 +34,6 @@ const FoodExtra = (props) => {
                         checked={foodSelection.vegetables}
                         onChange={(e) => { setFoodSelection({ ...foodSelection,vegetables: e.target.checked }) }} />
                 </label>
-                {/* <button type="submit">Submit</button>
-                <button onClick={stateReset}>Reset</button> */}
             
         </div>
     );
