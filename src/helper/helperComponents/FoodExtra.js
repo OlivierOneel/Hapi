@@ -15,6 +15,7 @@ const FoodExtra = (props) => {
             
                 <label >Canned Food
                 <input
+                        className="checkbox"
                         type="checkbox"
                         id="canned"
                         checked={foodSelection.canned}
@@ -22,6 +23,7 @@ const FoodExtra = (props) => {
                 </label>
                 <label >Baby Food
                 <input
+                        className="checkbox"
                         type="checkbox"
                         id="babyFood"
                         checked={foodSelection.babyFood}
@@ -29,6 +31,7 @@ const FoodExtra = (props) => {
                 </label>
                 <label >Vegetables
                 <input
+                        className="checkbox"
                         type="checkbox"
                         id="vegetables"
                         checked={foodSelection.vegetables}
