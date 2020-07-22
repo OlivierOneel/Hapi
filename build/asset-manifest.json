@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c9dd723e.chunk.css",
+    "main.js": "/static/js/main.e8156c64.chunk.js",
+    "main.js.map": "/static/js/main.e8156c64.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.643e38b8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.643e38b8.js.map",
+    "static/js/2.ac9c4be5.chunk.js": "/static/js/2.ac9c4be5.chunk.js",
+    "static/js/2.ac9c4be5.chunk.js.map": "/static/js/2.ac9c4be5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cd145877170160abe06ede6d91b04325.js": "/precache-manifest.cd145877170160abe06ede6d91b04325.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c9dd723e.chunk.css.map": "/static/css/main.c9dd723e.chunk.css.map",
+    "static/js/2.ac9c4be5.chunk.js.LICENSE.txt": "/static/js/2.ac9c4be5.chunk.js.LICENSE.txt",
+    "static/media/adult.png": "/static/media/adult.7e3b90e0.png",
+    "static/media/App.css": "/static/media/background.2b4423ce.jpg",
+    "static/media/boy.png": "/static/media/boy.c999a0a8.png",
+    "static/media/bucket.png": "/static/media/bucket.95318d7c.png",
+    "static/media/camping.png": "/static/media/camping.976763da.png",
+    "static/media/clothes.png": "/static/media/clothes.19cf2a0b.png",
+    "static/media/food_full.png": "/static/media/food_full.48804ec1.png",
+    "static/media/food_no.png": "/static/media/food_no.1f2406e2.png",
+    "static/media/food_some.png": "/static/media/food_some.7628ed6f.png",
+    "static/media/medecine.png": "/static/media/medecine.ea5b2391.png",
+    "static/media/pet-food.png": "/static/media/pet-food.59193ad1.png",
+    "static/media/pets.png": "/static/media/pets.a41901cf.png",
+    "static/media/rope.png": "/static/media/rope.c5c81bf9.png",
+    "static/media/soap.png": "/static/media/soap.cd25298f.png",
+    "static/media/toilet-paper.png": "/static/media/toilet-paper.7746122c.png",
+    "static/media/toilet.png": "/static/media/toilet.82a1da61.png",
+    "static/media/toothbrush.png": "/static/media/toothbrush.a03d799f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.643e38b8.js",
+    "static/js/2.ac9c4be5.chunk.js",
+    "static/css/main.c9dd723e.chunk.css",
+    "static/js/main.e8156c64.chunk.js"
+  ]
+}
