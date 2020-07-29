@@ -10,25 +10,37 @@ const GeoLocation = (props) => {
     const getLocation = () => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(getCoordinates, handleLocationError);
-            var x = document.querySelectorAll(".locNoNumber");
-            if(x.length) {
-                x[0].classList.remove("locNoNumber");
-                x[0].classList.add("locNumber")
             }
             
-        } else {
+        else {
             alert("Geolocation is not supported by this browser.");
         }
     }
     const getCoordinates = (position) => {
-        console.log(position.coords.latitude)
-        console.log(position.coords.longitude)
         setCoords({
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
             dispLat: Number(position.coords.latitude).toFixed(4),
             dispLon: Number(position.coords.longitude).toFixed(4),
         })
+        var x = document.querySelectorAll(".locNoNumber");
+        if(x.length) {
+            x[0].classList.remove("locNoNumber");
+            x[0].classList.add("locNumber")
+        }
+        var Dis = document.querySelector("#DisabledButton");
+        var En = document.querySelector("#EnabledButton")
+        Dis.classList.add("hiddenButton");
+        En.classList.remove("hiddenButton");
+        var disDone = document.querySelectorAll("#DisDoneButton");
+        if(disDone.length) {
+            disDone[0].classList.add("DoneButton")
+        }
+        var enDone = document.querySelectorAll("#DoneButton");
+        if(enDone.length) {
+            enDone[0].classList.remove("DoneButton");
+        }
+
     }
     const handleLocationError = (error) => {
         switch (error.code) {

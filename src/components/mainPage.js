@@ -6,7 +6,7 @@ class mainPage extends React.Component{
     return(
         <div className="mainPageContainer">
             <Link to="/victims">
-                <button className='mainPageButton'>I'm a victime</button>
+                <button className='mainPageButton'>I'm a victim</button>
             </Link>
             <Link to="/help">
             <button className='mainPageButton'>

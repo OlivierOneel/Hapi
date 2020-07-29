@@ -164,6 +164,48 @@ form input.checkbox{
   margin:10px;
   font-size:30px;
 }
+.DoneButton{
+  display: none;
+}
+#DisDoneButton{
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  margin:10px;
+  font-size:30px;
+  background-color: lightgray;
+  color: white;
+}
+#DoneButton{
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  margin:10px;
+  font-size:30px;
+}
+.hiddenButton{
+  display:none
+}
+#EnabledButton{
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  margin:10px;
+  font-size:30px;
+}
+#EnabledButton:hover{
+  background-color: white;
+  color: black;
+}
+#DisabledButton{
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  margin:10px;
+  font-size:30px;
+  background-color: lightgray;
+  color: white;
+}
 .buttonHelperFirst:hover {
   background-color: white;
   color: black;
@@ -307,4 +349,30 @@ td{
 }
 .housing_items{
   display:none;
+}
+
+#submitButton{
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  margin:10px;
+  font-size:30px;
+}
+#submitButton:hover {
+  background-color: white;
+  color: black;
+}
+#submitButton:disabled{
+  background-color: green;
+
+}
+.ThirdPageContainer{
+  height: 100%;
+  text-align: center;
+  padding:10px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: inline-block;
 }

@@ -23,10 +23,11 @@ class LastPage extends React.Component {
       
 
       return (
-         <div>
+         <div className='ThirdPageContainer'>
             <h1>Let us get your location.</h1>
-            <GeoLocation/> //Ça c'est le comp. qui trouve la geoloc. Et le 'disabled=this.state' met le boutton disable if true.
-            <button disabled={this.state} className="FirstPageButton" onClick={this.helpSent}>Submit</button> //disabled={this.state} c'est ça qui devrait rendre le bouton active
+            <GeoLocation/>
+            <button id='DisabledButton' disabled={true} type="submit">Submit</button>
+            <button id='EnabledButton' className="hiddenButton" type="submit" onClick={this.helpSent}>Submit</button>
          </div>
       );
    }

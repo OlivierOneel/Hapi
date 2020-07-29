@@ -60,7 +60,8 @@ const ResourceSelection = (props) => {
                     <HygExtra />
                 </div> : null}
                 <div className="form-submit-btn">
-                <button className="buttonHelperFirst" type="submit">Submit</button>
+                <button id='DisabledButton' disabled={true} type="submit">Submit</button>
+                <button id='EnabledButton' className="hiddenButton" type="submit">Submit</button>
                 </div>
             </form>
 

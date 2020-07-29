@@ -19,7 +19,8 @@ class helpFirstPage extends Component {
                     <GeoLocation />
                     <ResourceSelection />
                 <Link to='/help/2'>
-                <button className="buttonHelperFirst">Done!</button>
+                <button disabled={true} id = 'DisDoneButton'>Done!</button>
+                <button id = 'DoneButton' className="DoneButton">Done!</button>
                 </Link>
             </div>
         )
